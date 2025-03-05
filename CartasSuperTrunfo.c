@@ -19,7 +19,7 @@
 
    // Cadastro carta 1
    printf("Digite o código do Estado:\n");
-   printf("Estado (uma letra de 'A' a 'H') ");
+   printf("Estado (uma letra de 'A' a 'H' + o codigo do estado) ");
    scanf("%d", &codigo1);
    getchar(); // Limpa o buffer após a leitura do inteiro
 
@@ -44,7 +44,7 @@
    //-------------------------------------------------------------------
    // Cadastro carta 2
    printf("Digite o código do Estado:\n");
-   printf("Estado (uma letra de 'A' a 'H') ");
+   printf("Estado (uma letra de 'A' a 'H' + o codigo do estado) ");
    scanf("%d", &codigo2);
    getchar(); // Limpa o buffer após a leitura do inteiro
 
@@ -75,8 +75,9 @@
    printf("População: %d habitantes\n", populacao1);
    printf("Área: %.2f km²\n", area1);
    printf("PIB: %.2lf bilhões\n", pib1);
-   printf("Pontos turísticos: %d\n\n", pontos_turisticos1);
-
+   printf("Pontos turísticos: %d\n", pontos_turisticos1);
+   printf("Densidade Populacional: %.2lf hab/km2\n," (populacao1 / area1) )
+   printf("Pib per capita: %.2lf reais\n", (pib1 / populacao1))
    //-------------------------------------------------------------------
    // Exibição Carta 2
    printf("\n- Carta 2 -\n");
@@ -85,7 +86,9 @@
    printf("População: %d habitantes2\n", populacao2);
    printf("Área: %.2f km²\n", area2);
    printf("PIB: %.2lf bilhões\n", pib2);
-   printf("Pontos turísticos: %d\n\n", pontos_turisticos2);
+   printf("Pontos turísticos: %d\n", pontos_turisticos2);
+   printf("Densidade Populacional: %.2lf hab/km2\n," (populacao2 / area2) )
+   printf("Pib per capita: %.2lf reais\n", (pib2 / populacao2))
 
    //-------------------------------------------------------------------
 
