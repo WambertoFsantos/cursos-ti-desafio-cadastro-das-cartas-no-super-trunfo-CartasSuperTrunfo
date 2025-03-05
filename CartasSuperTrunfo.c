@@ -17,7 +17,7 @@
    float area2;
    double pib2;
 
-   // Cadastro carta 1
+   // Cadastro carta 
    printf("Digite o código do Estado:\n");
    printf("Estado (uma letra de 'A' a 'H' + o codigo do estado) ");
    scanf("%d", &codigo1);
