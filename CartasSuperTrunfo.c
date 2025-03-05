@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
@@ -19,52 +18,54 @@
    double pib2;
 
    // Cadastro carta 1
-   printf("Digite o código da Estado: carta 1");
+   printf("Digite o código do Estado:\n");
+   printf("Estado (uma letra de 'A' a 'H') ");
    scanf("%d", &codigo1);
    getchar(); // Limpa o buffer após a leitura do inteiro
 
-   printf("Digite o nome da Estado :  ");
-   printf("Estado (uma letra de 'A' a 'H') ");
-   fgets(nome1, sizeof(nome), stdin);
+   printf("Digite o nome do Estado:\n  ");
+   fgets(nome1, sizeof(nome1), stdin);
 
-   printf("Digite a população do Estado: ");
-   scanf("%d", &populacao1);
+   printf("Digite a população do Estado:\n ");
+   scanf("%d", &populacao1);                
    
-   printf("Digite a área da Estado (em km²): ");
+   printf("Digite a área da Estado (em km²):\n ");
    scanf("%f", &area1);
    
-   printf("Digite o PIB da Estado(em bilhões): ");
+   printf("Digite o PIB da Estado(em bilhões):\n ");
    scanf("%lf", &pib1);
    
-   printf("Digite o número de pontos turísticos: ");
+   printf("Digite o número de pontos turísticos:\n ");
    scanf("%d", &pontos_turisticos1);
 
-   printf("Primeira carta adicionada com sucesso.\n");
+   
+   printf("Primeira carta adicionada com sucesso.\n\n");
 
    //-------------------------------------------------------------------
    // Cadastro carta 2
-   printf("Digite o código da Estado: carta 2");
+   printf("Digite o código do Estado:\n");
    printf("Estado (uma letra de 'A' a 'H') ");
    scanf("%d", &codigo2);
    getchar(); // Limpa o buffer após a leitura do inteiro
 
-   printf("Digite o nome da Estado :  ");
-   fgets(nome2, sizeof(nome), stdin);
+   printf("Digite o nome da Estado:\n  ");
+   fgets(nome2, sizeof(nome2), stdin);
 
-   printf("Digite a população da estado: ");
+   printf("Digite a população da estado:\n ");
    scanf("%d", &populacao2);
    
-   printf("Digite a área da estado (em km²): ");
+   printf("Digite a área da estado (em km²):\n ");
    scanf("%f", &area2);
    
-   printf("Digite o PIB da Estadoo (em bilhões): ");
+   printf("Digite o PIB da Estadoo (em bilhões):\n ");
    scanf("%lf", &pib2);
    
-   printf("Digite o número de pontos turísticos: ");
+   printf("Digite o número de pontos turísticos:\n ");
    scanf("%d", &pontos_turisticos2);
 
-   printf("Segunda carta adicionada com sucesso.\n");
-   printf("dados das cartas adicionadas.\n");
+   printf("Segunda carta adicionada com sucesso.\n\n");
+
+   printf("dados das cartas adicionadas.\n\n");
    
    //-------------------------------------------------------------------
    // Exibição Carta 1
@@ -74,7 +75,7 @@
    printf("População: %d habitantes\n", populacao1);
    printf("Área: %.2f km²\n", area1);
    printf("PIB: %.2lf bilhões\n", pib1);
-   printf("Pontos turísticos: %d\n", pontos_turisticos1); "\n"
+   printf("Pontos turísticos: %d\n\n", pontos_turisticos1);
 
    //-------------------------------------------------------------------
    // Exibição Carta 2
@@ -84,7 +85,7 @@
    printf("População: %d habitantes2\n", populacao2);
    printf("Área: %.2f km²\n", area2);
    printf("PIB: %.2lf bilhões\n", pib2);
-   printf("Pontos turísticos: %d\n", pontos_turisticos2); "\n"
+   printf("Pontos turísticos: %d\n\n", pontos_turisticos2);
 
    //-------------------------------------------------------------------
 
