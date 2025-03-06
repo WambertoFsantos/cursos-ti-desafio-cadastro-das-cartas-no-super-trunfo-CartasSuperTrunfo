@@ -7,19 +7,21 @@
 
  // Definição das variáveis para carta 1
    int codigo1, populacao1, pontos_turisticos1;
-   char nome1[50];
+   char nome1[50], letra1[50];
    float area1;
    double pib1;
 
    // Definição das variáveis para carta 2
    int codigo2, populacao2, pontos_turisticos2;
-   char nome2[50];
+   char nome2[50],letra2[50];
    float area2;
    double pib2;
 
    // Cadastro carta 
+   printf("Digite uma letra de 'A' a 'H' rederente ao estado ");
+   fgets(letra1, sizeof(letra1), stdin);
+
    printf("Digite o código do Estado:\n");
-   printf("Estado (uma letra de 'A' a 'H' + o codigo do estado) ");
    scanf("%d", &codigo1);
    getchar(); // Limpa o buffer após a leitura do inteiro
 
@@ -43,8 +45,10 @@
 
    //-------------------------------------------------------------------
    // Cadastro carta 2
+   printf("Digite uma letra de 'A' a 'H' rederente ao estado ");
+   fgets(letra1, sizeof(letra1), stdin);
+   
    printf("Digite o código do Estado:\n");
-   printf("Estado (uma letra de 'A' a 'H' + o codigo do estado) ");
    scanf("%d", &codigo2);
    getchar(); // Limpa o buffer após a leitura do inteiro
 
@@ -78,6 +82,7 @@
    printf("Pontos turísticos: %d\n", pontos_turisticos1);
    printf("Densidade Populacional: %.2lf hab/km2\n," (populacao1 / area1) )
    printf("Pib per capita: %.2lf reais\n", (pib1 / populacao1))
+
    //-------------------------------------------------------------------
    // Exibição Carta 2
    printf("\n- Carta 2 -\n");
@@ -89,7 +94,6 @@
    printf("Pontos turísticos: %d\n", pontos_turisticos2);
    printf("Densidade Populacional: %.2lf hab/km2\n," (populacao2 / area2) )
    printf("Pib per capita: %.2lf reais\n", (pib2 / populacao2))
-
    //-------------------------------------------------------------------
 
    return 0;
